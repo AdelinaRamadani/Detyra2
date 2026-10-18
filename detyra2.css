@@ -1,0 +1,188 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fffaf5;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #252525;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #ffad42;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffad42;
+}
+
+.hero {
+    min-height: 380px;
+    background: linear-gradient(135deg, #512b1b, #a85b2a);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffad42;
+    color: #252525;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.menu {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu h2,
+.about h2,
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.food-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #a85b2a;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    color: #e27b20;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.about {
+    background-color: #f3e5d8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
